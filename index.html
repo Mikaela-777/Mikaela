@@ -58,7 +58,7 @@
       </div>
 
       <div class="hero-photo">
-        <img src="./assets/images/ava.jpeg">
+        <img src="./assets/images/ava.jpeg" alt="Foto Naja">
       </div>
     </div>
   </section>
@@ -71,7 +71,7 @@
       <div class="grid-3">
         <div class="card">
           <h3>Programing</h3>
-          <p>Python,C++,Java</p>
+          <p>Python, C++, Java</p>
         </div>
         <div class="card">
           <h3>Frontend</h3>
@@ -93,41 +93,96 @@
     </div>
   </section>
 
-  <!-- PROJECTS -->
-  <section id="projects" class="section">
-    <div class="container">
-      <h2 class="section-title">Projects</h2>
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <div class="container">
+    <h2 class="section-title">Projects</h2>
 
-      <div class="grid-3">
-        <article class="card hover">
-          <h3>Shome</h3>
-          <p>Dashboard IoT Smart Home untuk memonitoring sensor + kontrol aktuator secara real-time via web.</p>
-          <div class="tags">
-            <span>Django</span><span>MQTT</span><span>Supabase</span>
-          </div>
-        </article>
+    <div class="grid-3">
 
-        <article class="card hover">
-          <h3>Online Piano Website</h3>
-          <p>Website piano sederhana dengan interaksi tombol dan suara.</p>
-          <div class="tags">
-            <span>HTML</span><span>CSS</span><span>JS</span>
-          </div>
-        </article>
+      <article class="card hover project-card"
+        data-title="Online Piano Website"
+        data-desc="Yet"
+        data-tags="Yet"
+        data-image="./assets/images/project-yet.jpg"
+        data-link=""
+      >
 
-        <article class="card hover">
-          <h3>The Hotels</h3>
-          <p>
-            Website reservasi hotel dengan tampilan sederhana dan responsif, 
-            mendukung pencarian kamar dan pemesanan berbasis web.
-          </p>
-          <div class="tags">
-            <span>Django</span><span>PostgreSQL</span><span>JS</span>
-          </div>
-        </article>
+        <h3>Online Piano Website</h3>
+        <p>Website piano sederhana dengan interaksi tombol dan suara.</p>
+
+        <div class="tags">
+          <span>HTML</span><span>CSS</span><span>JS</span>
+        </div>
+      </article>
+
+      <article class="card hover project-card"
+        data-title="The Hotels"
+        data-desc="Yet"
+        data-tags="Yet"
+        data-image="./assets/images/hotels.png"
+        data-link=""
+      >
+
+        <h3>The Hotels</h3>
+        <p>Website reservasi hotel dengan tampilan sederhana dan responsif, 
+            mendukung pencarian kamar dan pemesanan berbasis web.</p>
+
+        <div class="tags">
+          <span>Django</span><span>PostgreSQL</span><span>JS</span>
+        </div>
+      </article>
+
+      <article class="card hover project-card"
+        data-title="Shome"
+        data-desc="Yet"
+        data-tags="Yet"
+        data-image="./assets/images/shome.png"
+        data-link=""
+      >
+        <h3>Shome</h3>
+        <p>Dashboard IoT Smart Home untuk memonitoring sensor + kontrol aktuator secara real-time via web.</p>
+
+        <div class="tags">
+          <span>Django</span><span>MQTT</span><span>Supabase</span>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- MODAL PROJECT -->
+<div class="modal" id="projectModal" aria-hidden="true">
+  <div class="modal-overlay" data-close="true"></div>
+
+  <div class="modal-content modal-split" role="dialog" aria-modal="true">
+
+    <button class="modal-close" data-close="true">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+
+    <!-- LEFT : IMAGE -->
+    <div class="modal-left">
+      <img id="modalImage" src="" alt="Project image">
+    </div>
+
+    <!-- RIGHT : CONTENT -->
+    <div class="modal-right">
+      <h3 id="modalTitle"></h3>
+      <p id="modalDesc" class="modal-desc"></p>
+
+      <div id="modalTags" class="tags"></div>
+
+      <div class="modal-actions">
+        <a id="modalLink" class="btn ghost" target="_blank" rel="noopener" style="display:none;">
+          View Project
+        </a>
       </div>
     </div>
-  </section>
+
+  </div>
+</div>
 
   <!-- CONTACT -->
   <section id="contact" class="section section-alt">
@@ -146,6 +201,7 @@
     </div>
   </footer>
 
+<script src="./script.js"></script>
+
 </body>
 </html>
-
