@@ -104,7 +104,7 @@
         data-title="Online Piano Website"
         data-desc="Yet"
         data-tags="Yet"
-        data-image="./assets/images/project-yet.jpg"
+        data-images="./assets/images/project-yet.jpg"
         data-link=""
       >
 
@@ -120,7 +120,7 @@
         data-title="The Hotels"
         data-desc=""
         data-tags="Yet"
-        data-image="./assets/images/hotels.png"
+        data-images="./assets/images/hotels.png|./assets/images/hotels login.png|./assets/images/hotels reservasi.png"
         data-link=""
       >
 
@@ -140,7 +140,7 @@
         kipas, dan pintu otomatis. Data sensor dikirim melalui protokol MQTT, disimpan di Supabase (PostgreSQL), dan ditampilkan pada dashboard Django yang dapat diakses 
         melalui browser tanpa aplikasi tambahan. Selain monitoring dan kontrol jarak jauh, Shome juga menyimpan riwayat data untuk analisis kondisi dan efisiensi penggunaan perangkat."
         data-tags="Yet"
-        data-image="./assets/images/shome.png"
+        data-images="./assets/images/shome.png|./assets/images/shome c.png"
         data-link=""
       >
         <h3>Shome</h3>
@@ -165,9 +165,13 @@
       <i class="fa-solid fa-xmark"></i>
     </button>
 
-    <!-- LEFT : IMAGE -->
+    <!-- LEFT : IMAGE CAROUSEL -->
     <div class="modal-left">
+      <button class="image-nav image-prev" id="imagePrev" type="button" aria-label="Previous image">&#10094;</button>
       <img id="modalImage" src="" alt="Project image">
+      <button class="image-nav image-next" id="imageNext" type="button" aria-label="Next image">&#10095;</button>
+      <div class="image-counter" id="imageCounter" aria-live="polite"></div>
+      <div class="image-dots" id="imageDots"></div>
     </div>
 
     <!-- RIGHT : CONTENT -->
